@@ -1,0 +1,101 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+  background: #f0f2f5;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.loginDiv {
+  width: 360px;
+  padding: 40px 30px;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
+}
+
+.links-div {
+  margin-bottom: 20px;
+}
+
+.linkActived, .link {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: background 0.3s;
+}
+
+.linkActived {
+  background: #505050;
+  color: #fff;
+}
+
+.link {
+  background: #f0f2f5;
+  color: #505050;
+}
+
+.link:hover {
+  background: #505050;
+  color: #fff;
+}
+
+.inputLogin {
+  width: 80%;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.inputLogin:focus {
+  border: 1px solid #505050;
+}
+
+.submitLogin {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  background: #505050;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitLogin:hover {
+  background: #404040;
+}
+
+.errorLine {
+  font-weight: bold;
+  color: #ff2222;
+  margin: 20px 0;
+  display: none;
+}
+
+@media (max-width: 400px) {
+  .loginDiv {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}

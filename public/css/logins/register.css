@@ -1,0 +1,175 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registerDiv {
+  width: 500px;
+  padding: 40px 30px;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.name-surnameDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.inputName, .inputSurname {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  color: #626262;
+}
+
+.inputName:focus, .inputSurname:focus {
+  border-color: #777;
+}
+
+.inputForm {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #626262;
+}
+
+.inputForm:focus {
+  border-color: #777;
+}
+
+form input::placeholder {
+  color: #9e9d9d;
+}
+
+.inputBtn {
+  width: 100%;
+  padding: 10px;
+  background: #444;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inputBtn:hover {
+  background: #333;
+}
+
+.inputBtn:active {
+  background: #222;
+}
+
+.inputBtnLink {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #444;
+  border-radius: 5px;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.inputBtnLink:hover {
+  background: #444;
+  color: #fff;
+}
+
+.errorLine {
+  color: #ff0000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.passLines {
+  margin: 10px 0 20px;
+  color: #ff0000;
+  font-weight: bold;
+  display: none;
+  list-style: none;
+}
+
+#checkRegisterDiv {
+  display: none;
+}
+
+.inputBtnCancel, .inputBtnSubmit {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.inputBtnSubmit {
+  background: #444;
+  border: none;
+  color: #fff;
+}
+
+.inputBtnSubmit:hover {
+  background: #333;
+}
+
+.inputBtnSubmit:active {
+  background: #222;
+}
+
+.inputBtnCancel {
+  background: #faf8f8;
+  border: 2px solid #c4c4c4;
+  color: #302c2c;
+}
+
+.inputBtnCancel:hover {
+  background: #ece9e9;
+}
+
+.inputBtnCancel a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 550px) {
+  .registerDiv {
+    width: 90%;
+  }
+}

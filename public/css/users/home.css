@@ -1,0 +1,113 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+  width: 100%;
+}
+
+.projectsDiv {
+  background: #303030;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.projectsDiv h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.projectsDiv .content {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.no-projects {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #666;
+}
+
+.project-td {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.project-td:hover {
+  background: #f0f0f0;
+}
+
+.project-td a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-td .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-td .right {
+  display: flex;
+  align-items: center;
+}
+
+.project-td .pBtn {
+  margin: 0 5px;
+  color: #666;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.project-td .pBtn:hover {
+  color: #333;
+}
+
+.lineDiv {
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.pTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pDate {
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  align-items: center;
+}
+
+.pDate i {
+  margin-right: 5px;
+}
